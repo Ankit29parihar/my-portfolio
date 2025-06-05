@@ -18,8 +18,9 @@
     />
   </head>
   <body>
+    <div id="green-overlay"></div>
     <div id="container">
-      <div id="cross-icon"><i class="ri-close-large-fill"></i></div>
+        <div id="cross-icon" onclick="handleCloseClick()"><i class="ri-close-large-fill"></i></div>
       <div id="heading">
         <p>Showcasing some of my best work</p>
         <h2 class="about-me">Portfolio</h2>
@@ -92,5 +93,88 @@
         </div>
       </div>
     </div>
+
+    <!-- Skills & Experience Section -->
+<div id="skills-experience-section">
+  <h2 class="section-heading">Skills & Experience</h2>
+  <div class="skills-exp-wrapper">
+    <div class="skills-section">
+      <h3 class="skills-title">Skills</h3>
+      <div class="skills-list">
+        <div class="skill-bar">
+          <span>HTML5</span>
+          <div class="bar-bg"><div class="bar-fill" style="--percent:90%"></div></div>
+        </div>
+        <div class="skill-bar">
+          <span>CSS3</span>
+          <div class="bar-bg"><div class="bar-fill" style="--percent:85%"></div></div>
+        </div>
+        <div class="skill-bar">
+          <span>JavaScript</span>
+          <div class="bar-bg"><div class="bar-fill" style="--percent:80%"></div></div>
+        </div>
+        <div class="skill-bar">
+          <span>React</span>
+          <div class="bar-bg"><div class="bar-fill" style="--percent:75%"></div></div>
+        </div>
+        <div class="skill-bar">
+          <span>Node.js</span>
+          <div class="bar-bg"><div class="bar-fill" style="--percent:70%"></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="exp-section">
+      <h3 class="exp-title">Experience</h3>
+      <div class="exp-list">
+        <div class="exp-item">
+          <div class="exp-dot"></div>
+          <div>
+            <span class="exp-role">Frontend Developer</span>
+            <span class="exp-time">2022 - Present</span>
+            <div class="exp-desc">Building modern UIs and web apps for clients worldwide.</div>
+          </div>
+        </div>
+        <div class="exp-item">
+          <div class="exp-dot"></div>
+          <div>
+            <span class="exp-role">Web Designer</span>
+            <span class="exp-time">2020 - 2022</span>
+            <div class="exp-desc">Designed responsive websites and branding for startups.</div>
+          </div>
+        </div>
+        <div class="exp-item">
+          <div class="exp-dot"></div>
+          <div>
+            <span class="exp-role">Intern Developer</span>
+            <span class="exp-time">2019 - 2020</span>
+            <div class="exp-desc">Worked on small business websites and learned full-stack basics.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section id="contact-section">
+  <h2 class="section-heading">Contact</h2>
+  <form id="contact-form" autocomplete="off">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+
+</section>
+
+<!-- Footer -->
+<footer id="footer">
+  <p>&copy; 2025 Your Name. All rights reserved.</p>
+  <div class="footer-social">
+    <a href="#"><i class="ri-github-line"></i></a>
+    <a href="#"><i class="ri-linkedin-box-fill"></i></a>
+    <a href="#"><i class="ri-instagram-line"></i></a>
+  </div>
+</footer>
+</div>
+
+    <script src="app.js"></script>
   </body>
 </html>
